@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="141.0" prefWidth="284.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="73.0" fitWidth="76.0" layoutX="8.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+      	<image><Image url="@images/dialog-warning.png" /></image>
+      </ImageView>
+      <Button id="btnOk" fx:id="btnOk" layoutX="218.0" layoutY="104.0" mnemonicParsing="false" text="확인" />
+      <Label id="lblWarning" fx:id="lblWarning" layoutX="92.0" layoutY="34.0" prefHeight="45.0" prefWidth="182.0" text="Label" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root type="javafx.scene.layout.BorderPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="txtField" prefHeight="23.0" prefWidth="359.0" />
+                  <Button fx:id="btnSend" mnemonicParsing="false" text="전송" />
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <TextArea fx:id="txtArea" prefHeight="244.0" prefWidth="500.0" BorderPane.alignment="CENTER" editable="false" />
+         </center>
+         <top>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView prefHeight="200.0" prefWidth="400.0">
+                  <placeholder><Label text="참여 가능한 방이 없습니다" /></placeholder>
+                    <columns>
+                      <TableColumn prefWidth="49.0" text="방번호" />
+                      <TableColumn prefWidth="185.0" text="방제목" />
+                        <TableColumn prefWidth="51.0" text="방장" />
+                        <TableColumn prefWidth="41.0" text="인원" />
+                        <TableColumn prefWidth="73.0" text="공개/비공개" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </center>
+   <right>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="33.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="195.0" text="방만들기" />
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <TableView fx:id="userTable" prefHeight="373.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <placeholder><Label text="이용자가 없습니다" /></placeholder>
+              <columns>
+                <TableColumn prefWidth="62.0" text="닉네임" />
+                <TableColumn prefWidth="137.0" text="상태메시지" />
+              </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+   </right>
+</fx:root>

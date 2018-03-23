@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="417.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tmax.chat.LoginController">
+   <children>
+      <Button fx:id="logIn" layoutX="114.0" layoutY="319.0" mnemonicParsing="false" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="goToSignIn" layoutX="108.0" layoutY="364.0" mnemonicParsing="false" text="Sign in">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtUserName" layoutX="48.0" layoutY="210.0" promptText="UserName">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="txtPassword" layoutX="48.0" layoutY="260.0" promptText="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="lblStatus" alignment="CENTER" layoutY="129.0" prefHeight="19.0" prefWidth="300.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTmaxTalk" alignment="CENTER" layoutY="90.0" prefHeight="19.0" prefWidth="300.0" text="TmaxTalk" textFill="blue">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

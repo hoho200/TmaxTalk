@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.tmax.chat.TmaxTalkServer">
+   <top>
+      <HBox prefHeight="66.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="textFieldIp" prefHeight="23.0" prefWidth="318.0" text="127.0.0.1" />
+            <Button fx:id="btnRun" mnemonicParsing="false" prefHeight="23.0" prefWidth="92.0" text="시작" />
+            <Button fx:id="btnStop" prefHeight="23.0" prefWidth="92.0" text="종료" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <TextArea fx:id="textArea" prefHeight="236.0" prefWidth="400.0" BorderPane.alignment="CENTER" editable="false"/>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="31.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="textFieldMsg" prefHeight="23.0" prefWidth="358.0" />
+            <Button fx:id="btnSend" mnemonicParsing="false" text="전송" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

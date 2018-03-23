@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="391.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tmax.chat.SignInController">
+   <children>
+      <Button fx:id="signIn" layoutX="49.0" layoutY="338.0" mnemonicParsing="false" text="회원가입">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="goToLogin" layoutX="183.0" layoutY="338.0" mnemonicParsing="false" text="로그인">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="registerUserName" layoutX="48.0" layoutY="75.0" promptText="아이디를 입력하세요*">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="registerPassword" layoutX="48.0" layoutY="133.0" promptText="비번을 입력하세요*">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="lblTmaxTalkSignIn" alignment="CENTER" layoutY="20.0" prefHeight="19.0" prefWidth="300.0" text="TmaxTalk 회원가입" textFill="blue">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="confirmPassword" layoutX="49.0" layoutY="194.0" promptText="비밀번호 확인*">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="registerUserNickName" layoutX="49.0" layoutY="255.0" prefHeight="33.0" prefWidth="134.0" promptText="사용할 닉네임">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblStatus" alignment="CENTER" layoutX="193.0" layoutY="261.0" prefHeight="21.0" prefWidth="100.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
